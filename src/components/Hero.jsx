@@ -1,34 +1,37 @@
 import React from "react";
-import { motion } from "framer-motion";
-import priyanshuProfile from "/src/assets/priyanshuProfile.webp";
+import { motion } from "motion/react";
+import Navbar from "/src/components/Navbar.jsx";
+import { Typewriter } from "react-simple-typewriter";
 const Hero = () => {
   return (
     <motion.div
-      className="h-screen flex items-center justify-around text-center gap-4 p-11 flex-wrap-reverse"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      className="h-screen w-full bg-cover bg-center relative"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2 }}
     >
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-primary">
+
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-40">
+        <h1 className="text-sm md:text-xl">| Frontend Developer | Content Creator |</h1>
+
+        <h1 className="text-4xl md:text-7xl font-bold mb-8">
           Hi, I'm Priyanshu
         </h1>
-        <p className="text-lg mt-2 text-secondary">
-          Frontend Developer | React | Tailwind | Framer-motion
-        </p>
-        <motion.div
-        whileTap={{scale:0.9}}
-        whileHover={{scale: 1.05}}
-        className="bg-gray-400 rounded-full w-40 h-10 flex justify-center items-center m-5">
-        <a href="/resume.pdf" className="text-black cursor-pointer p-2" download>Download Resume</a>
-        </motion.div>
-      </div>
-      <div>
-        <img
-          src={priyanshuProfile}
-          alt="priyanshuProfile"
-          className="w-sm rounded-full lg:w-md"
-        />
+        <h1>
+        <Typewriter
+          words={[
+            "HTML, CSS, javaScript",
+            "Reactjs",
+            "TailwindCss",
+            "Framer-motion",
+          ]}
+          loop={true}
+          cursor
+          cursorStyle="|"
+          typeSpeed={80}
+          deleteSpeed={60}
+          delaySpeed={500}
+        /></h1>
       </div>
     </motion.div>
   );
