@@ -6,7 +6,7 @@ import { projects } from "/src/constants/index.js";
 const Projects = () => {
   return (
     <motion.div
-      className="min-h-screen flex flex-col items-center text-center px-4"
+      className="flex flex-col items-center text-center px-4"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}

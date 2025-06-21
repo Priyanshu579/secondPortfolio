@@ -13,13 +13,3 @@ body{
     /* background-color: #0c0c1d; */
     color: lightgray;
 }
-
-html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
-
-section{
-    height: 100vh;
-    scroll-snap-align: center;
-}

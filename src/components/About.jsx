@@ -9,7 +9,7 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 const About = () => {
   return (
     <motion.div
-      className="h-screen flex flex-col items-center justify-center px-6 md:px-20 text-center"
+      className="flex flex-col items-center justify-center px-6 md:px-20 text-center"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}

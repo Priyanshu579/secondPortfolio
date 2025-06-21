@@ -7,23 +7,28 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div className="bg-black text-gray-500 h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth m-10">
-      <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 space-y-10">
-      <Navbar />
-      <section id="hero" className="snap-center min-h-[95vh] py-10">
-        <Hero />
-      </section>
-      <section id="about" className="snap-center min-h-[95vh] py-10">
-        <About />
-      </section>
-      <section id="projects" className="snap-center min-h-[95vh] py-10">
-        <Projects />
-      </section>
-      <section id="contact" className="snap-center min-h-[95vh] py-10">
-        <Contact />
-      </section>
-    </div>
-    </div>
+    <div className="bg-black text-gray-500 h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
+  <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
+    <Navbar />
+
+    <section id="hero" className="snap-start min-h-screen py-20">
+      <Hero />
+    </section>
+
+    <section id="about" className="snap-start py-20">
+      <About />
+    </section>
+
+    <section id="projects" className="snap-start py-20">
+      <Projects />
+    </section>
+
+    <section id="contact" className="snap-start py-20">
+      <Contact />
+    </section>
+  </div>
+</div>
+
   );
 };
 
